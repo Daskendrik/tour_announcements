@@ -24,7 +24,6 @@ class Gallery {
                 this.activeSlideIndex = this.slidesCount - 1
             }
         }
-        console.log(this.slidesCount)
         const height = this.container.clientHeight
         this.mainSlide.style.transform = `translateY(-${this.activeSlideIndex * height}px)`
         this.sidebar.style.transform = `translateY(${this.activeSlideIndex * height}px)`
@@ -33,17 +32,16 @@ class Gallery {
 }
 
 const firstGallery = new Gallery('firstGallery')
-firstGallery.upBtn.addEventListener('click', () => {
-    firstGallery.changeSlide('up')
-})
-firstGallery.downBtn.addEventListener('click', () => {
-    firstGallery.changeSlide('down')
-})
-
 const secondGallery = new Gallery('secondGallery')
-secondGallery.upBtn.addEventListener('click', () => {
-    secondGallery.changeSlide('up')
-})
-secondGallery.downBtn.addEventListener('click', () => {
-    secondGallery.changeSlide('down')
-})
+function addListEvent(...arg) {
+    arg.map(item => addEvent(item))
+    function addEvent(gallery) {
+        gallery.upBtn.addEventListener('click', () => {
+            gallery.changeSlide('up')
+        })
+        gallery.downBtn.addEventListener('click', () => {
+            gallery.changeSlide('down')
+        })  
+    }
+}
+addListEvent(firstGallery, secondGallery)
