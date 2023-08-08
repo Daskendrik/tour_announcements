@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(212, 66, 66);
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    margin: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.head div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.head p {
+    font-size: 26px;
+}
+
+img {
+    width: 50%;
+}
+
+div {
+    border: 1px solid black;
+}
+
+section {
+    text-align: center;
+}
+.program-tour {
+    background: rgb(240, 234, 234, .2);
+}
+
+.plane-day {
+    width: 30%;
+    display: inline-block;
+    border: 0;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse; 
+}
+
+.time-line{
+	border-right: 4px solid #000000;
+    width: 30px;
+    height: 30px;
+}
+
+.table td {
+    position: relative;
+    text-align: left;
+}
+
+.table p {
+    padding: 8px;
+}
+
+.circle {
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: -8px;
+}
+
+.gallery {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+}
+
+.price-tour {
+    background: rgb(240, 234, 234, .2);
+}
+
+.price{
+    border: 2px solid black;
+    background: white;
+    color: black;
+    padding: 2px;
+}
+
+.footer {
+    position: fixed;
+    /* height: 20px; */
+    background: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 0;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
