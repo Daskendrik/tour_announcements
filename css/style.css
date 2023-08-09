@@ -310,7 +310,13 @@ section {
 
   .gallery {
     width: 90%;
-    height: 50%;
+    height: 200px;
+    
+  }
+
+  .gallery h3{
+    padding: 0;
+    font-size: 10px;
   }
 
   .container {
@@ -322,7 +328,7 @@ section {
   }
 
   .price-tour {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .footer{
@@ -330,7 +336,7 @@ section {
   }
 
   *{
-    font-size: .9em;
+    font-size: 20px;
   }
 }
 
