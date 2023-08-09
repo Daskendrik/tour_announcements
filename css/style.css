@@ -249,6 +249,7 @@ section {
     border: 0;
     border-top: 2px solid black;
     text-align: center;
+    padding: 10px;
 }
 
 .footer p {
