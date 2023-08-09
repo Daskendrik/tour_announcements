@@ -5,14 +5,24 @@
 }
 
 body {
-    background: rgb(212, 66, 66);
+    background: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
     color: white;
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(224, 97, 97);
+  margin-bottom: 20px;
 }
 
 .container {
-    margin: 40px;
+    margin: 0 100px 50px 100px ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -26,7 +36,8 @@ body {
 }
 
 .head p {
-    font-size: 26px;
+    font-size: 30px;
+    color: red;
 }
 
 img {
@@ -38,18 +49,27 @@ img {
 } */
 
 section {
+    background: rgba(21, 166, 192, 0.5);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
     text-align: center;
 }
 
-.program-tour {
-    background: rgb(240, 234, 234, .2);
+#firstGallery, #secondGallery {
+  text-align: center;
+}
+
+.program-tour, .price-tour {
     padding: 20px;
     
 }
 
 .day-num {
     margin: 10px;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .plane-day {
@@ -95,7 +115,8 @@ section {
     height: 500px;
     position: relative;
     overflow: hidden;
-    border: 0;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .sidebar {
@@ -180,18 +201,38 @@ section {
     border-bottom-right-radius: 5px;
   }
 
-
-.price-tour {
-    background: rgb(240, 234, 234, .2);
-    padding: 20px;
-}
-
 .price{
     border: 2px solid black;
     background: white;
     color: black;
     padding: 2px;
+    text-shadow: none;
 }
+
+.price-tour {
+  text-align: center;
+}
+
+.price-tour table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.price-tour table td{
+  width: 100%;
+  table-layout: fixed;
+  padding: 10px;
+}
+
+.price-tour table td:nth-child(even) {
+  text-align: left;
+  border-left: 1px solid black;
+}
+.price-tour table td:nth-child(odd) {
+  text-align: right;
+  border-right: 1px solid black;
+}
+
 
 .footer {
     position: fixed;
@@ -208,6 +249,7 @@ section {
 .footer p {
     margin: 0;
     color: #000000;
+    text-shadow:none
 }
 
 
