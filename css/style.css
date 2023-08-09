@@ -275,6 +275,7 @@ section {
 
 
 @media (max-width: 1200px) {
+
   .plane-day{
     display: block;
     text-align: center;
@@ -283,7 +284,47 @@ section {
 
   .gallery {
     width: 90%;
-    
+  }
+
+  .container {
+    margin: 1px;
+  }
+
+  .gallery p{
+    display: none;
+  }
+
+  .price-tour {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .plane-day{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .gallery {
+    width: 90%;
+  }
+
+  .container {
+    margin: 1%;
+  }
+
+  .gallery p{
+    display: none;
+  }
+
+  .price-tour {
+    margin-bottom: 30px;
+  }
+
+  *{
+    font-size: .9em;
   }
 }
 
