@@ -161,6 +161,7 @@ section {
 
   .sidebar p {
     padding: 0 30px 0 30px;
+    font-size: 15px;
   }
   
   .main-slide {
@@ -273,14 +274,17 @@ section {
 }
 
 
+@media (max-width: 1200px) {
+  .plane-day{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 
-/* p {
-  margin: 20px;
-  text-shadow: 2px 2px 2px #000;
+  .gallery {
+    width: 90%;
+    
+  }
 }
-
-h1 {
-  text-shadow: 2px 2px 2px #000;
-} */
 
 
