@@ -41,7 +41,14 @@ function addListEvent(...arg) {
         })
         gallery.downBtn.addEventListener('click', () => {
             gallery.changeSlide('down')
-        })  
+        })
+          
     }
 }
+
 addListEvent(firstGallery, secondGallery)
+
+let playfirstGallery = setInterval(() => firstGallery.changeSlide('up'),5000)
+let timePlaySecondGallery = setTimeout(() => {
+    let playsecondGallery = setInterval(() => secondGallery.changeSlide('up'),5000)
+}, 1000)
