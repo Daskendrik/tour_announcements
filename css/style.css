@@ -304,11 +304,13 @@ section {
   .plane-day{
     display: block;
     text-align: center;
+    font-size: 20px;
     width: 100%;
   }
 
   .gallery {
     width: 90%;
+    height: 50%;
   }
 
   .container {
