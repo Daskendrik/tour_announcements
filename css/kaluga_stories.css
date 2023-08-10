@@ -118,6 +118,83 @@ table tr td input {
     width: 100%;
 }
 
+.plane-day {
+    width: 30%;
+    display: inline-block;
+    border: 0;
+    vertical-align: middle;
+}
+
+.day-num {
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse; 
+}
+
+.time-line-right{
+    border-right: 4px solid #000000;
+    height: 30px;
+}
+
+.time-line-left{
+    border-left: 4px solid #000000;
+    height: 30px;
+}
+
+.table td {
+    position: relative;
+    font-size: 30px;
+    width: 100%;
+}
+
+.table p {
+    padding: 8px;
+}
+
+.time {
+  font-weight: bold;
+  color: #000;
+  text-shadow: none;
+  text-shadow: 1px 0 1px #ffffff, 
+    0 1px 1px #ffffff, 
+    -1px 0 1px #ffffff, 
+    0 -1px 1px #ffffff;
+}
+
+.circle-left {
+    background: rgb(235, 81, 81);
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: -8px;
+}
+
+.circle-right {
+    background: rgb(235, 81, 81);
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    right: -8px;
+}
+
+.table td:nth-child(odd) {
+    text-align: right;
+}
+
+.table td:nth-child(even) {
+    text-align: left;
+}
+
 @media (max-width: 800px) {
     .about-city {
         display: block;
