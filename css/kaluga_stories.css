@@ -2,7 +2,6 @@ body {
     padding: 0;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 100vw;
 }
 
 .top {
@@ -70,6 +69,16 @@ table tr td input {
     text-align: center;
 }
 
+.head-block {
+    font-size: 40px;
+    color: #000000;
+    text-shadow: 1px 0 2px rgb(199, 61, 61), 
+    0 1px 2px rgb(199, 61, 61), 
+    -1px 0 2px rgb(199, 61, 61), 
+    0 -1px 2px rgb(199, 61, 61);
+    
+}
+
 .about-city {
     vertical-align: middle;
     border: 2px solid rgb(235, 81, 81);
@@ -77,7 +86,7 @@ table tr td input {
     background: rgb(243, 227, 227);
     padding: 2vh;
     margin: 3%;
-    width: 40vw;
+    width: 35vw;
     height: 30vh;
     text-align: center;
     display: inline-block;
@@ -96,7 +105,7 @@ table tr td input {
     border-radius: 40px;
     margin: 3%;
     font-size: 3vh;
-    width: 40vw;
+    width: 35vw;
     height: 30vh;
     text-align: center;
     display: inline-block;
