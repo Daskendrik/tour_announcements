@@ -67,6 +67,7 @@ table tr td input {
 .main-content {
     position: relative;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .head-block {
@@ -96,7 +97,7 @@ table tr td input {
 }
 
 .about-city p {
-    font-size: 3vh;
+    font-size: 3vmin;
 }
 
 .about-city-img {
@@ -127,15 +128,22 @@ table tr td input {
 
 .day-num-own {
     font-size: 40px;
-    text-align: left;
+    text-align: center;
     border-bottom: 4px solid black;
     margin-bottom: 0;
 }
 .day-num-two {
     font-size: 40px;
-    text-align: left;
+    text-align: center;
     border: 4px solid black;
     margin-bottom: 0;
+    margin-top: 0;
+}
+
+.day-num-end {
+    font-size: 40px;
+    text-align: center;
+    border-top: 4px solid black;
     margin-top: 0;
 }
 
@@ -211,6 +219,19 @@ table tr td input {
     padding-left: 5px;
 }
 
+.footer {
+    position: fixed;
+    /* height: 20px; */
+    background: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 0;
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
 @media (max-width: 800px) {
     .about-city {
         display: block;
@@ -223,6 +244,13 @@ table tr td input {
 
     .about-city-img {
         display: none;
+    }
+
+    .plane-day {
+        width: 100%;
+        display: inline-block;
+        border: 0;
+        vertical-align: middle;
     }
 }
 
