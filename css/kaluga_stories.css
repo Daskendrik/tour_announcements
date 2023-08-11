@@ -102,7 +102,7 @@ table tr td input {
 
 .about-city p {
     /* font-size: 3vmin; */
-    font-size: clamp(1vw, 1vh + 1vw, 30px);
+    font-size: clamp(11px, 1.25vh + 1.25vw, 30px);
 }
 
 .about-city-img {
@@ -265,13 +265,20 @@ table tr td input {
 }
 
  @media (max-width: 1300px) {
-    .about-city {
-        display: block;
-        width: 80vw;
+
+    .header{
+        height: 50vh;
     }
 
-    .about-city p {
-        font-size: 20px;
+    .main-content {
+        padding-bottom: 20%;
+    }
+
+    .about-city {
+        display: block;
+        width: 90vw;
+        box-shadow: none;
+        height: auto;
     }
 
     .about-city-img {
@@ -284,6 +291,15 @@ table tr td input {
         border: 0;
         vertical-align: middle;
     }
+
+    table {
+        width: 100%;
+    }
+
+    .price {
+        width: 90vw;
+    }
+
 }
 /*
 @media (max-width: 400px) {
