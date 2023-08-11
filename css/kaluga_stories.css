@@ -55,7 +55,7 @@ table tr td input {
 .header p {
     white-space:pre;
     /* font-size: 5vw; */
-    font-size: clamp(24px, 3vw + 2vh, 90px);
+    font-size: clamp(14px, 2.5vw + 2vh, 90px);
     color: rgb(199, 61, 61);
     text-shadow: 1px 0 1px #ffffff, 
     0 1px 1px #ffffff, 
@@ -128,15 +128,17 @@ table tr td input {
     display: inline-block;
     border: 0;
     vertical-align: middle;
+
 }
 
 .day-num-own {
     /* font-size: 40px; */
-    font-size:clamp(25px, 2vh + 1vw, 40px);
+    font-size:clamp(20px, 2vh + 1vw, 40px);
     text-align: center;
     border-bottom: 4px solid black;
-    padding: 5px;
+    padding-bottom: 5px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 .day-num-two {
     /* font-size: 40px; */
