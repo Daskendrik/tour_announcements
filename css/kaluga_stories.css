@@ -254,6 +254,7 @@ table tr td input {
 
 .footer {
     position: fixed;
+    width: 100%;
     /* height: 20px; */
     background: white;
     bottom: 0;
