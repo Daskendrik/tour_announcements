@@ -71,6 +71,7 @@ table tr td input {
     position: relative;
     text-align: center;
     margin-bottom: 5%;
+    z-index: 5;
 }
 
 .head-block {
@@ -98,7 +99,7 @@ table tr td input {
 
 .about-city p {
     /* font-size: 3vmin; */
-    font-size: clamp(11px, 1.25vh + 1.25vw, 30px);
+    font-size: clamp(11px, 1.25vh + 1.25vw, 26px);
 }
 
 .about-city-img {
@@ -124,7 +125,7 @@ table tr td input {
     display: inline-block;
     border: 0;
     vertical-align: middle;
-
+    text-align: center;
 }
 
 .day-num-own {
@@ -153,6 +154,18 @@ table tr td input {
     border-top: 4px solid black;
     margin-top: 0;
     padding: 5px;
+}
+
+.circle {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    position: fixed;
+    left: 49.95%;
+    top: 50%;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+    z-index: 2;
 }
 
 .table {
@@ -296,6 +309,7 @@ table tr td input {
         display: inline-block;
         border: 0;
         vertical-align: middle;
+        z-index: 5;
     }
 
     .price {
