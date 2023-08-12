@@ -157,17 +157,17 @@ table tr td input {
 
 .circle {
     display: inline-block;
-    height: 11px;
-    width: 11px;
+    height: 15px;
+    width: 15px;
     position: fixed;
-    left: 49.95%;
+    left: 49.8%;
     top: 50%;
     border-radius: 50%;
-    background: rgb(255, 0, 0);
+    background: rgb(25, 0, 255);
 }
 
 .hide-circle {
-    display: none;
+    background: rgba(255, 0, 0, 0);
 }
 
 .table {
