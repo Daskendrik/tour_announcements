@@ -57,13 +57,6 @@ function createNewLineDay(blokSecondDay){
   lineDay = new LineDay(r.y,r.bottom)
 }
 
-
-
-
-
-
-
-
 function checkMyCircle(circle){
   if(myCircle) {
     reloadMyCircle(circle)
@@ -163,3 +156,22 @@ window.addEventListener('scroll', () => {
   checkLineDay(blokSecondDay)
   reloadHidden()
 })
+
+
+//Код взяла с https://webgolovolomki.com/poyavlenie-elementov-pri-skrolle/  - лень было придумывать = )
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('opacity-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.opacity');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}

@@ -94,7 +94,24 @@ table tr td input {
     box-shadow: 30px -10px rgb(247, 86, 86);
     display: inline-block;
     overflow: hidden;
+
+
+    /* opacity: 0;
+    transform: translateY(20px); */
+
+
 }
+
+.opacity {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.opacity.opacity-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
 
 .about-city p {
     /* font-size: 3vmin; */
