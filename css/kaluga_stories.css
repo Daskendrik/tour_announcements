@@ -160,10 +160,10 @@ table tr td input {
     height: 15px;
     width: 15px;
     position: fixed;
-    left: 49.8%;
+    /* left: 49.78%; */
     top: 50%;
     border-radius: 50%;
-    background: rgb(25, 0, 255);
+    background: rgb(255, 0, 0);
 }
 
 .hide-circle {

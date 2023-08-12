@@ -13,17 +13,20 @@ let lineDay;
 
 
 class TableTour {
-  constructor(id,height, heightEnd){
+  constructor(id,height, heightEnd, width, left){
     this.id = id
     this.heightBegin = height
     this.heightEnd = heightEnd
+    this.width = width
+    this.left = left
   }
 }
 
 class Circle {
-  constructor(height, heightEnd){
+  constructor(height, heightEnd, width){
     this.heightBegin = height
     this.heightEnd = heightEnd
+    this.width = width
   }
 }
 
@@ -73,11 +76,15 @@ function reloadMyCircle(circle){
   let r = circle.getBoundingClientRect();
   myCircle.heightBegin = r.y;
   myCircle.heightEnd = r.bottom;
+  let left = Number(firstDay.width/2)-(myCircle.width/4)+firstDay.left
+  circle.style.left = `${left}px`
 }
 
 function createNewMyCircle(circle){
   let r = circle.getBoundingClientRect();
-  myCircle = new Circle(r.y,r.bottom)
+  myCircle = new Circle(r.y,r.bottom,r.width)
+  let left = Number(firstDay.width/2)-(myCircle.width/4)+firstDay.left
+  circle.style.left = `${left}px`
 }
 
 function checkObjTable(tables){
@@ -95,9 +102,13 @@ function reloadObjTable(tables){
     if (num==1){
       firstDay.heightBegin = r.y;
       firstDay.heightEnd = r.bottom;
+      firstDay.width = r.width;
+      firstDay.left = r.left;
     }else {
       secondDay.heightBegin = r.y;
       secondDay.heightEnd = r.bottom;
+      secondDay.width = r.width;
+      secondDay.left = r.left;
     }
     num++
   }
@@ -107,7 +118,7 @@ function createNewObjTable(tables){
   let num = 1;
   for(let table of tables) {
   let r = table.getBoundingClientRect();
-  num==1 ? firstDay = new TableTour(num,r.y,r.bottom) : secondDay = new TableTour(num,r.y,r.bottom)
+  num==1 ? firstDay = new TableTour(num,r.y,r.bottom, r.width, r.left) : secondDay = new TableTour(num,r.y,r.bottom, r.width, r.left)
   num++
   }
 }
