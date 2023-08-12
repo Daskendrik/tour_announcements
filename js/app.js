@@ -1,8 +1,9 @@
 
 
 const circle = document.querySelector('.circle')
-const table = document.querySelector('.table')
-console.log(table)
+const tables = document.querySelectorAll('.table')
+let firstDay;
+let secondtDay;
 
 // table.addEventListener('scroll', seeCircle)
 
@@ -12,8 +13,28 @@ function seeCircle(){
 }
 
 class TableTour {
-  constructor(id,height){
-    this.id
-    this.height
+  constructor(id,height, heightEnd){
+    this.id = id
+    this.heightBegin = height
+    this.heightEnd = heightEnd
   }
 }
+
+
+let num = 1;
+for(let table of tables) {
+  let r = table.getBoundingClientRect();
+  num==1 ? firstDay = new TableTour(num,r.y,r.bottom) : secondtDay = new TableTour(num,r.y,r.bottom)
+  num++
+}
+
+function createNewObjTable(tables){
+  let num = 1;
+  for(let table of tables) {
+  let r = table.getBoundingClientRect();
+  num==1 ? firstDay = new TableTour(num,r.y,r.bottom) : secondtDay = new TableTour(num,r.y,r.bottom)
+  num++
+  }
+}
+console.log(firstDay)
+console.log(secondtDay)
