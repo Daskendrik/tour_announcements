@@ -66,6 +66,20 @@ table tr td input {
     top: 20%;
     z-index: 100;
 }
+.header h3 {
+    white-space:pre;
+    /* font-size: 5vw; */
+    font-size: clamp(14px, 2vw + 1vh, 90px);
+    color: rgb(199, 61, 61);
+    text-shadow: 1px 0 1px #ffffff, 
+    0 1px 1px #ffffff, 
+    -1px 0 1px #ffffff, 
+    0 -1px 1px #ffffff;
+    position: absolute;
+    left: 25%;
+    bottom: 5%;
+    z-index: 100;
+}
 
 .main-content {
     text-align: center;
