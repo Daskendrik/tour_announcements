@@ -87,6 +87,8 @@ table tr td input {
     margin-bottom: 5%;
     z-index: 5;
     width: 90vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .head-block {
@@ -313,13 +315,29 @@ table tr td input {
     padding: 10px;
     font-size:clamp(13px, 1vh + 0.5vw, 30px);
 }
-.container {
-    width: 100%;
+
+.gallery {
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    /* для выравнивания по центру */
     display: flex;
-    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80vw;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    
   }
 .slide {
-    height: 80vh;
+    height: 50vh;
     border-radius: 20px;
     margin: 10px;
     cursor: pointer;
@@ -388,6 +406,8 @@ table tr td input {
         width: 90vw;
         text-align: center;
     }
+
+    
 
 }
 /*
