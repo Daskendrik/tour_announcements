@@ -175,3 +175,21 @@ let elements = document.querySelectorAll('.opacity');
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+
+
+
+const slides = document.querySelectorAll('.slide') //берем все слайды
+
+for (const slide of slides){
+    slide.addEventListener('click',() => {
+        clearActiveClasses()
+        slide.classList.add('active')
+    })
+}
+
+function clearActiveClasses(){
+    slides.forEach((slide) => {
+        slide.classList.remove('active')
+    })
+}
