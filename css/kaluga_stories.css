@@ -367,6 +367,10 @@ table tr td input {
   .slide.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+    background: #00000080;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
   }
 
  @media (max-width: 1300px) {
