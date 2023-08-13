@@ -339,7 +339,7 @@ table tr td input {
 .slide {
     height: 50vh;
     border-radius: 20px;
-    margin: 10px;
+    margin: 0.5%;
     cursor: pointer;
     color: #fff;
     flex: 1;
@@ -355,9 +355,16 @@ table tr td input {
     position: absolute;
     font-size: 24px;
     bottom: 20px;
-    left: 20px;
+    left: 2%;
+    right: 2%;
     margin: 0;
     opacity: 0;
+    font-size: clamp(11px, 1.25vh + 1.2vw, 26px);
+  }
+
+  .slide h3 p{
+    font-size: clamp(11px, 1vh + 1vw, 26px);
+    margin: 0;
   }
   
   .slide.active {
@@ -410,6 +417,10 @@ table tr td input {
         width: 90vw;
         text-align: center;
     }
+
+    .slide h3 p{
+        display: none;
+      }
 
     
 
