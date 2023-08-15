@@ -10,15 +10,15 @@ let lineDay;
 
 for (const cityBlok of cityBlocks) {
     console.log(cityBlok)
-    cityBlok.addEventListener('click',() => activeBlock)
+    cityBlok.addEventListener('click',() => activeBlock(event))
 }
 
 function activeBlock(event) {
-    console.log('Click')
-    // if(event.classList.contains('inactive-block')) {
-    //     addInactiveBlock()
-    //     event.classList.remove('inactive-block')
-    // }
+    console.log(event)
+    if(event.classList.contains('inactive-block')) {
+        addInactiveBlock()
+        event.classList.remove('inactive-block')
+    }
 }
 
 function addInactiveBlock(){
