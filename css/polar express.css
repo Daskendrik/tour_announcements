@@ -91,11 +91,43 @@ table tr td input {
     align-items: center;
 }
 
+.head-block-top {
+    /* font-size: 40px; */
+    font-size: clamp(25px, 1vw + 1.5vh, 40px);
+    color: #000000;
+}
+
 .head-block {
     /* font-size: 40px; */
     font-size: clamp(25px, 2vw + 1.5vh, 40px);
     color: #000000;
     
+}
+
+.head-block-top h3{
+    display: inline-block;
+    border-right: 3px solid blue;
+    border-left: 3px solid blue;
+    padding: 0 3%;
+}
+
+.head-block-top h3:first-child {
+    border: 0;
+    padding: 0;
+    border-right: 3px solid blue;
+    padding-right: 3%;
+}
+
+.head-block-top h3:last-child {
+    border: 0;
+    padding: 0;
+    border-left: 3px solid blue;
+    padding-left: 3%;
+}
+
+.active-city {
+    text-decoration: underline;
+    text-decoration-color: blue;
 }
 
 .about-city {
@@ -110,14 +142,7 @@ table tr td input {
     text-align: center;
     display: inline-block;
     box-shadow: 30px -10px rgb(86, 118, 247);
-    display: inline-block;
     overflow: hidden;
-
-
-    /* opacity: 0;
-    transform: translateY(20px); */
-
-
 }
 
 .opacity {
@@ -133,6 +158,7 @@ table tr td input {
 
 .about-city p {
     /* font-size: 3vmin; */
+    display: inline-block;
     font-size: clamp(11px, 1.25vh + 1vw, 26px);
 }
 
