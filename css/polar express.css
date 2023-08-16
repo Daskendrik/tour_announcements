@@ -109,6 +109,7 @@ table tr td input {
     border-right: 3px solid blue;
     border-left: 3px solid blue;
     padding: 0 3%;
+    cursor: pointer;
 }
 
 .head-block-top h3:first-child {

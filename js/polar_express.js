@@ -1,29 +1,31 @@
 const circle = document.querySelector('.circle')
 const tables = document.querySelectorAll('.table')
 const blokSecondDay = document.querySelector('.day-num-two')
-const cityBlocks = document.querySelectorAll('.head-block-top h3')
+const cityNames =  document.querySelectorAll('.head-block-top h3')
+const cityBlocks =  document.querySelectorAll('.head-block-top h3')
 let firstDay;
 let secondDay;
 let myCircle;
 let lineDay;
 
 
-for (const cityBlok of cityBlocks) {
-    console.log(cityBlok)
-    cityBlok.addEventListener('click',() => activeBlock(event))
+for (const cityName of cityNames) {
+    console.log(cityName)
+    cityName.addEventListener('click',() => activeBlock(event))
 }
 
 function activeBlock(event) {
-    console.log(event.target.classList)
-    if(event.classList.contains('inactive-block')) {
-        addInactiveBlock()
-        event.classList.remove('inactive-block')
+    console.log(event.target)
+    if(!event.target.classList.contains('active-city')) {
+        addInactiveCityName()
+        // addInactiveBlock()
+        event.target.classList.add('active-city')
     }
 }
 
-function addInactiveBlock(){
-    for (const cityBlok of cityBlocks) {
-        cityBlok.classList.add('inactive-block')
+function addInactiveCityName(){
+    for (const cityName of cityNames) {
+        cityName.classList.remove('active-city')
     } 
 }
 
