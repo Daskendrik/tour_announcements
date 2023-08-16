@@ -14,7 +14,7 @@ for (const cityBlok of cityBlocks) {
 }
 
 function activeBlock(event) {
-    console.log(event)
+    console.log(event.target.classList)
     if(event.classList.contains('inactive-block')) {
         addInactiveBlock()
         event.classList.remove('inactive-block')
