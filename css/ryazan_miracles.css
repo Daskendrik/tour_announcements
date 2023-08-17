@@ -1,0 +1,435 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.top {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    width: 100%;
+}
+
+.logo {
+    width: 200px; 
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.contact {
+    width: 300px; 
+    display: inline-block; 
+    vertical-align: middle;
+    /* font-size: 20px; */
+    font-size: clamp(15px, 1vw + 1vh, 20px);
+}
+
+table tr td {
+    text-align: right;
+    padding-left: 10px;
+}
+
+table tr td input {
+    border: 0;
+    font-size: 1em;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background: url(https://pic.rutubelist.ru/video/70/d3/70d3756fde695c681620d1a6272a8604.jpg);
+    background-position: center top;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+    position: relative;
+    border-top: 4px solid rgb(246, 197, 52);
+    border-bottom: 4px solid rgb(246, 197, 52);
+}
+
+.header p {
+    white-space:pre;
+    /* font-size: 5vw; */
+    font-size: clamp(14px, 4vw + 0.9vh, 90px);
+    color: rgb(246, 197, 52);
+    text-shadow:    1px 0 1px #000000, 
+                    0 1px 1px #000000, 
+                    -1px 0 1px #000000, 
+                    0 -1px 1px #000000;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    z-index: 100;
+}
+.header h3 {
+    white-space:pre;
+    /* font-size: 5vw; */
+    font-size: clamp(14px, 2vw + 1vh, 90px);
+    color: rgb(246, 197, 52);
+    text-shadow:    1px 0 1px #000000, 
+                    0 1px 1px #000000, 
+                    -1px 0 1px #000000, 
+                    0 -1px 1px #000000;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 100;
+}
+
+.main-content {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
+    z-index: 5;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-block {
+    /* font-size: 40px; */
+    font-size: clamp(25px, 2vw + 1.5vh, 40px);
+    color: #000000;
+    
+}
+
+.about-city {
+    vertical-align: middle;
+    border: 2px solid rgb(246, 197, 52);
+    border-radius: 40px;
+    background: rgb(243, 227, 227);
+    padding: 2vh;
+    margin: 3%;
+    width: 35vw;
+    height: 30vh;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 30px -10px rgb(230, 184, 48);
+    display: inline-block;
+    overflow: hidden;
+
+
+    /* opacity: 0;
+    transform: translateY(20px); */
+
+
+}
+
+.opacity {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.opacity.opacity-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+
+.about-city p {
+    /* font-size: 3vmin; */
+    font-size: clamp(11px, 1.25vh + 1vw, 26px);
+}
+
+.about-city-img {
+    vertical-align: middle;
+    border: 2px solid rgb(246, 197, 52);
+    border-radius: 40px;
+    margin: 3%;
+    width: 35vw;
+    height: 30vh;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px 1px rgb(230, 184, 48);
+}
+
+.about-city-img img {
+    width: 100%;
+}
+
+.plane-day {
+    width: 50vw;
+    display: inline-block;
+    border: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.day-num-own {
+    /* font-size: 40px; */
+    font-size:clamp(20px, 2vh + 1vw, 40px);
+    text-align: center;
+    border-bottom: 4px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.day-num-two {
+    /* font-size: 40px; */
+    font-size:clamp(20px, 2vh + 1vw, 40px);
+    text-align: center;
+    border: 4px solid black;
+    padding: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.day-num-end {
+    /* font-size: 40px; */
+    font-size:clamp(20px, 2vh + 1vw, 40px);
+    text-align: center;
+    border-top: 4px solid black;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.circle {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    /* left: 49.78%; */
+    top: 50%;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+}
+
+.hide-circle {
+    background: rgba(255, 0, 0, 0);
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse; 
+    table-layout: fixed
+
+}
+
+.time-line-right{
+    border-right: 4px solid #000000;
+    height: 30px;
+}
+
+.time-line-left{
+    border-left: 4px solid #000000;
+    height: 30px;
+}
+
+.table td {
+    position: relative;
+    /* font-size: 30px; */
+    font-size:clamp(15px, 2vh + 1vw, 30px);
+    width: 100%;
+}
+
+.table p {
+    padding: 8px;
+}
+
+.time {
+  font-weight: bold;
+  color: #000;
+  text-shadow: none;
+  text-shadow: 1px 0 1px #ffffff, 
+    0 1px 1px #ffffff, 
+    -1px 0 1px #ffffff, 
+    0 -1px 1px #ffffff;
+}
+
+.circle-left {
+    background: rgb(235, 81, 81);
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: -8px;
+}
+
+.circle-right {
+    background: rgb(235, 81, 81);
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    right: -8px;
+}
+
+.table td img {
+    width: 20%;
+    padding: 0 10% 0 10%;
+}
+
+.table td:nth-child(odd) {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.table td:nth-child(even) {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.price {
+    width: 50vw;
+    display: inline-block;
+    border: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.price table {
+    display: inline-block;
+    border-collapse:collapse;
+    font-size:clamp(13px, 1vh + 1vw, 30px);
+}
+
+.price table tbody{
+    box-shadow: 0px 0px 6px 1px #ee8181;
+}
+
+.price table td {
+    text-align: left;
+    border: 2px solid rgb(235, 81, 81);
+    padding: 1px 5px 1px 5px;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    /* height: 20px; */
+    background: white;
+    bottom: 0;
+    left: 0;
+    border: 0;
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    font-size:clamp(13px, 1vh + 0.5vw, 30px);
+}
+
+.gallery {
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    /* для выравнивания по центру */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80vw;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    
+  }
+.slide {
+    height: 50vh;
+    border-radius: 20px;
+    margin: 0.5%;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+    text-shadow: 2px 2px 2px #000;
+  }
+  
+  .slide h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 2%;
+    right: 2%;
+    margin: 0;
+    opacity: 0;
+    font-size: clamp(11px, 1.25vh + 1.2vw, 26px);
+  }
+
+  .slide h3 p{
+    font-size: clamp(11px, 1vh + 1vw, 26px);
+    margin: 0;
+  }
+  
+  .slide.active {
+    flex: 10;
+  }
+  
+  .slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    background: #00000080;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+ @media (max-width: 1300px) {
+
+    .header{
+        height: clamp(170px, 35vh, 1600px); 
+    }
+
+    .header p {
+        left: 2%;
+    }
+
+    .main-content {
+        padding-bottom: 20%;
+    }
+
+    .about-city {
+        display: block;
+        width: auto;
+        box-shadow: none;
+        height: auto;
+    }
+
+    .about-city-img {
+        display: none;
+    }
+
+    .plane-day {
+        width: 100%;
+        display: inline-block;
+        border: 0;
+        vertical-align: middle;
+        z-index: 5;
+    }
+
+    .price {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .slide h3 p{
+        display: none;
+      }
+
+    
+
+}
+/*
+@media (max-width: 400px) {
+    
+
+    .about-city p {
+        font-size: 13px;
+    }
+} */
