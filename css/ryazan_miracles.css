@@ -198,7 +198,7 @@ table tr td input {
     /* left: 49.78%; */
     top: 50%;
     border-radius: 50%;
-    background: rgb(255, 0, 0);
+    background: rgb(250, 188, 1);
 }
 
 .hide-circle {
@@ -244,7 +244,7 @@ table tr td input {
 }
 
 .circle-left {
-    background: rgb(235, 81, 81);
+    background: rgb(246, 197, 52);
     box-sizing: border-box;
     border-radius: 50%;
     height: 12px;
@@ -254,7 +254,7 @@ table tr td input {
 }
 
 .circle-right {
-    background: rgb(235, 81, 81);
+    background: rgb(246, 197, 52);
     box-sizing: border-box;
     border-radius: 50%;
     height: 12px;
