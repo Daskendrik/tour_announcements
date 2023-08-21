@@ -3,9 +3,9 @@ const tables = document.querySelectorAll('.table')
 const blokSecondDay = document.querySelector('.day-num-two')
 const cityNames =  document.querySelectorAll('.head-block-top h3')
 const cityBlocks =  document.querySelectorAll('.head-block-top h3')
-const cityKirovsk = document.querySelector('#kirovsk')
-const cityMurmansk = document.querySelector('#murmansk')
-const cityTeriberka = document.querySelector('#teriberka')
+const cityKirovsk = document.querySelector('#blockKirovsk')
+const cityMurmansk = document.querySelector('#blockMurmansk')
+const cityTeriberka = document.querySelector('#blockTeriberka')
 let firstDay;
 let secondDay;
 let myCircle;
@@ -21,6 +21,8 @@ function activeBlock(event) {
     console.log(event.target)
     if(!event.target.classList.contains('active-city')) {
         addInactiveCityName()
+        let city = event.target.id
+        reloadActiveBlock(city)
         // addInactiveBlock()
         event.target.classList.add('active-city')
     }
@@ -32,8 +34,24 @@ function addInactiveCityName(){
     } 
 }
 
-function reloadActiveBlock() {
-  let activeBlock = document.querySelector('.')
+function reloadActiveBlock(city) {
+  console.log(city)
+  let activeBlock = document.querySelector('.active-block')
+  activeBlock.classList.remove('active-block')
+  switch (city) {
+    case 'kirovsk':
+      cityKirovsk.classList.add('active-block')
+      break;
+    case 'murmansk':
+      console.log(cityMurmansk)
+      cityMurmansk.classList.add('active-block')
+      break;
+    case 'teriberka':
+      cityTeriberka.classList.add('active-block')
+      break;
+    default:
+      break;
+  }
 }
 
 

@@ -131,8 +131,12 @@ table tr td input {
     text-decoration-color: blue;
 }
 
-.inactive-block {
+.block-city {
     display: none;
+}
+
+.active-block {
+    display: block;
 }
 
 .about-city {
