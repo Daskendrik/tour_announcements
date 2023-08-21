@@ -32,6 +32,12 @@ function addInactiveCityName(){
     } 
 }
 
+function reloadActiveBlock() {
+  let activeBlock = document.querySelector('.')
+}
+
+
+//Реализация кружка
 class TableTour {
   constructor(id,height, heightEnd, width, left){
     this.id = id
@@ -56,6 +62,13 @@ class LineDay {
     this.heightEnd = heightEnd
   }
 }
+
+window.addEventListener('scroll', () => {
+  checkObjTable(tables)
+  checkMyCircle(circle)
+  checkLineDay(blokSecondDay)
+  reloadHidden()
+})
 
 function checkLineDay(blokSecondDay){
   if(lineDay) {
@@ -168,14 +181,6 @@ function addHidden(){
 function removeHidden(){
   circle.classList.remove('hide-circle')
 }
-
-
-window.addEventListener('scroll', () => {
-  checkObjTable(tables)
-  checkMyCircle(circle)
-  checkLineDay(blokSecondDay)
-  reloadHidden()
-})
 
 
 //Код взяла с https://webgolovolomki.com/poyavlenie-elementov-pri-skrolle/  - лень было придумывать = )
