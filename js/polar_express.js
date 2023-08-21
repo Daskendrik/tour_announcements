@@ -3,6 +3,9 @@ const tables = document.querySelectorAll('.table')
 const blokSecondDay = document.querySelector('.day-num-two')
 const cityNames =  document.querySelectorAll('.head-block-top h3')
 const cityBlocks =  document.querySelectorAll('.head-block-top h3')
+const cityKirovsk = document.querySelector('#kirovsk')
+const cityMurmansk = document.querySelector('#murmansk')
+const cityTeriberka = document.querySelector('#teriberka')
 let firstDay;
 let secondDay;
 let myCircle;
