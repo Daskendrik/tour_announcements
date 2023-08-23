@@ -197,6 +197,16 @@ table tr td input {
     text-align: center;
 }
 
+.day {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.day-active {
+    text-decoration: overline;
+    text-decoration-color: blue;
+}
+
 .day-num-own {
     /* font-size: 40px; */
     font-size:clamp(20px, 2vh + 1vw, 40px);
