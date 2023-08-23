@@ -110,6 +110,8 @@ table tr td input {
     border-left: 3px solid blue;
     padding: 0 3%;
     cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 .head-block-top h3:first-child {
@@ -117,6 +119,11 @@ table tr td input {
     padding: 0;
     border-right: 3px solid blue;
     padding-right: 3%;
+}
+
+.head-block-top h3:hover {
+    text-decoration-color: rgba(0, 0, 255, 1);
+    transition: text-decoration-color 500ms;
 }
 
 .head-block-top h3:last-child {
@@ -128,7 +135,7 @@ table tr td input {
 
 .active-city {
     text-decoration: underline;
-    text-decoration-color: blue;
+    text-decoration-color: blue !important;
 }
 
 .block-city {
