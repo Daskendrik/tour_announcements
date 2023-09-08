@@ -1,0 +1,31 @@
+.top {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+
+.logo {
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact {
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+  /* font-size: 20px; */
+  font-size: clamp(15px, 1vw + 1vh, 20px);
+}
+
+table tr td {
+  text-align: right;
+  padding-left: 10px;
+}
+
+table tr td input {
+  border: 0;
+  font-size: 1em;
+  padding-left: 10px;
+  width: 100%;
+}
