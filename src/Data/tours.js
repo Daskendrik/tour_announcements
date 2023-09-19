@@ -23,6 +23,10 @@ const tours = [
         ],
       },
     ],
+    borderColor: 'rgb(199, 61, 61)',
+    headImg:
+      'url(https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/51624d12-c704-40ae-8761-ef319e1b691a/)',
+    textColor: 'rgb(199, 61, 61)',
   },
   {
     title: '«Другие истории»',
