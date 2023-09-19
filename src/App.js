@@ -1,17 +1,23 @@
 import './App.css';
-import InfoCompany from './Components/InfoCompany';
-import Header from './Components/Header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Tours from './Components/Tours';
+import Tour from './Components/Tour';
+import Layout from './Components/Layout';
 
 function App() {
   return (
-    <div>
-      <InfoCompany />
-      <Header
-        backgroundUrl="url('https://ozernyi-sochi.ru/wp-content/uploads/c/e/d/ced2c53014b4dddb4231d27bb7a7f959.jpeg')"
-        borderColor="red"
-        textColor="blue"
-      />
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<h3>Главная страница</h3>} />
+            <Route path="tours" element={<Tours />} />
+            <Route path="tours/:slug" element={<Tour />} />
+            <Route path="*" element={<h3>Не найдено</h3>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
