@@ -1,4 +1,4 @@
-import Menu from './Menu';
+import Menu from './Global/Menu';
 import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
